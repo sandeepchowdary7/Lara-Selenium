@@ -17,7 +17,7 @@ class FormTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit(new ApplicationFormPage)
-                    ->assertSee('Application Form', $browser->element('.is-uppercase'));
+                    ->assertTrue('Application Form', $browser->element('@bodyTitle'));
         });
     }
 }

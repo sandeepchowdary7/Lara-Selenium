@@ -23,7 +23,7 @@
     </style>
 
     <body>
-{{ csrf  }}
+        @csrf
         <div class="is-uppercase">
            Application Form
         </div>
