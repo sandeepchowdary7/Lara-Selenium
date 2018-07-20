@@ -3,7 +3,7 @@ namespace Tests\Browser\Pages;
 
 use Laravel\Dusk\Browser;
 
-class HomePage extends Page
+class ApplicationFormPage extends Page
 {
     /**
      * Get the URL for the page.
@@ -12,7 +12,7 @@ class HomePage extends Page
      */
     public function url()
     {
-        return 'http://localhost/Lara-Selenium/public/';
+        return '/Lara-Selenium/public/Form';
     }
 
     /**
@@ -23,7 +23,7 @@ class HomePage extends Page
      */
     public function assert(Browser $browser)
     {
-        //
+        $browser->assertPathIs($this->url());
     }
 
     /**
@@ -34,7 +34,7 @@ class HomePage extends Page
     public function elements()
     {
         return [
-            '@element' => '#selector',
+            '@element' => '.is-uppercase',
         ];
     }
 }
