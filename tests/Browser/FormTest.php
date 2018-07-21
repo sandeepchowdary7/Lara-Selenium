@@ -17,7 +17,7 @@ class FormTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit(new ApplicationFormPage)
-                          ->assertSee('@bodytitle');
+                          ->element('body>h1');
         });
     }
 }

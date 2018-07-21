@@ -13,20 +13,11 @@
           padding-left:70px;
           padding-right:70px;
           }
-
-          .is-uppercase{
-          position: relative;
-          padding-left:35%;
-          color:red;
-          font-size:45px;
-          }
     </style>
 
     <body>
         @csrf
-        <div class="is-uppercase">
-           Application Form
-        </div>
+        <h1> Application Form </h1>
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
