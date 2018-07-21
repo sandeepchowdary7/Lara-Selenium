@@ -13,11 +13,11 @@ class FormTest extends DuskTestCase
      *
      * @return void
      */
-    public function testFormTitle()
+    public function testApplicationFormTitle()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit(new ApplicationFormPage)
-                    ->assertTrue('Application Form', $browser->element('@bodyTitle'));
+                          ->assertSee('@bodytitle');
         });
     }
 }

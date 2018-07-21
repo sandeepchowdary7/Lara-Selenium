@@ -34,7 +34,7 @@ class ApplicationFormPage extends Page
     public function elements()
     {
         return [
-            '@bodyTitle' => 'body > div.is-uppercase',
+            '@bodytitle' => 'body > div.is-uppercase',
         ];
     }
 }
